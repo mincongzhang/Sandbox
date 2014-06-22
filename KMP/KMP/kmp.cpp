@@ -14,13 +14,12 @@ int *next = new int[m];
 assert( next != 0);
 next[0] = -1; 
 
-int j = 0,k = -1;
-while(j < m-1){
-    if (k >= 0 && P[k] != P[j]){
-		//k = next[k];
-		k = -1;
-	}
-    j++; k++; next[j] = k;
+int k = 0;
+for(int j=1;j<m;j++)
+{
+	if(P[k]==P[j]) k++;	
+	else           k=0;
+	next[j]=k;
 }
 
 return next;
