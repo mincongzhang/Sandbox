@@ -36,8 +36,8 @@ k = -1 when j = 0;
     int k = 0;
     for(int j=1;j
     {
-            if(P[k]==P[j]) k++;
-            else           k=0;
+        if(P[k]==P[j]) k++;
+        else           k=0;
         next[j]=k;
     }
     
