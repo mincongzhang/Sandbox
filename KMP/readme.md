@@ -4,7 +4,7 @@ k = match到的最大长度
 j = P string 的长度-1
 N[j] = j - k;
     
-##在计算好特征向量N[j]之后，匹配算法很简单就能实现：
+#####在计算好特征向量N[j]之后，匹配算法很简单就能实现：
     int KMPStrMatching(string T, string P, int *N, int start){
     int j = 0;
     int i = start;
@@ -26,7 +26,7 @@ N[j] = j - k;
         return (-1);
     }
     
-##求特征向量的算法框架：未优化版(ppt上的原代码)
+#####求特征向量的算法框架：未优化版(ppt上的原代码)
     int findNext(string P){
     int m = P.length();
     assert( m > 0 );
@@ -44,7 +44,7 @@ N[j] = j - k;
         return next;
     }
     
-##求特征向量的算法框架：未优化版(修改版)
+#####求特征向量的算法框架：未优化版(修改版)
     //特征向量：最长的首尾配串值k
     int *findNext(string P){
     int m = P.length();
