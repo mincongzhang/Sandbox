@@ -5,6 +5,7 @@
 #include <iostream>
 using namespace std;
 
+//特征向量：最长的首尾配串值k
 int *findNext(string P){
 int m = P.length();
 assert( m > 0 );
@@ -28,7 +29,7 @@ return next;
 int main(int argc, char *argv[])
 {
     string t = "abcabcd";
-    string p = "aaaabaaaac";
+    string p = "abcdabd";
     int *N;     
     cout << "the text to be matched is :" << t;
     
