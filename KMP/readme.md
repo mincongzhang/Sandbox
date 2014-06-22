@@ -65,7 +65,7 @@ N[j] = j - k;
     return next;
     }
 
-reference：
+reference：  
 1. http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html  
 2. https://class.coursera.org/dsalgo-001/lecture/31  
 
